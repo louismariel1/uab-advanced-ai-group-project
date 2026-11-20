@@ -40,3 +40,10 @@ results/**
 # OS files
 .DS_Store
 Thumbs.db
+
+# Track SSL checksum, not model checkpoints
+!checkpoints/ssl/
+!checkpoints/ssl/teacher_ssl_v1.sha256
+
+# Keep environment manifests local
+manifests/

@@ -1,0 +1,18 @@
+{
+  "version": "draft-v0.1",
+  "seed": 0,
+  "source_dataset": "CIFAR10",
+  "target_dataset": "CIFAR100",
+  "target_classes": [
+    "aquarium_fish",
+    "flatfish",
+    "ray",
+    "shark",
+    "trout"
+  ],
+  "target_train_fraction": 0.8,
+  "ssl_pretext": "rotation_prediction_4way",
+  "teacher_architecture": "ConvBackbone(num_features=64)",
+  "preprocessing": "P3 rotation SSL: train random crop/flip/color/grayscale; normalized mean=(0.5,0.5,0.5), std=(0.2,0.2,0.2); validation deterministic",
+  "checkpoint_format": "state_dict_plus_metadata"
+}
