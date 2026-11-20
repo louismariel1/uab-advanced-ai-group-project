@@ -1,0 +1,8 @@
+# Project A Python dependencies
+# Versions must be validated against the working Colab notebooks.
+torch
+torchvision
+numpy
+matplotlib
+tqdm
+scikit-learn

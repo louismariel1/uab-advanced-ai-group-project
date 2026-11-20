@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Datasets
+data/
+datasets/
+
+# Model checkpoints and generated artifacts
+checkpoints/**
+!checkpoints/.gitkeep
+experiments/**
+!experiments/.gitkeep
+results/**
+!results/.gitkeep
+
+# Model files outside checkpoint directories
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# Local configuration and editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
